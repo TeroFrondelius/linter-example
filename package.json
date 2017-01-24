@@ -1,30 +1,18 @@
 {
   "name": "linter-example",
-  "main": "./lib/linter-example",
+  "main": "index.js",
   "version": "0.0.0",
-  "description": "A short description of your package",
-  "keywords": [
-  ],
-  "activationCommands": {
-    "atom-workspace": "linter-example:provideLinter"
-  },
-  "repository": "https://github.com/atom/linter-example",
-  "license": "MIT",
+  "private": true,
+  "description": "My Linter Package",
+  "keywords": ["linter-example", "example"],
   "engines": {
-    "atom": ">=1.0.0 <2.0.0"
+    "atom": ">=1.4.0 <2.0.0"
   },
-  "dependencies": {
-      "atom-linter": "^8.0.0",
-      "atom-package-deps": "^4.0.1"
-  },
-  "activationHooks": [
-    "language-c:grammar-used"
-  ],
   "providedServices": {
-  "linter": {
-    "versions": {
-      "2.0.0": "provideLinter"
+    "linter": {
+      "versions": {
+        "1.0.0": "provideLinter"
+      }
     }
   }
-}
 }
